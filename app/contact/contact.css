@@ -1,0 +1,214 @@
+/* ==========================================================================
+   Contact page
+   ========================================================================== */
+.contact-page {
+  padding-block: clamp(40px, 7vw, 80px) clamp(56px, 9vw, 104px);
+  background: var(--glacier);
+  min-height: calc(100dvh - var(--nav-h));
+}
+.contact-head {
+  max-width: 60ch;
+  margin-bottom: clamp(24px, 4vw, 40px);
+}
+.contact-head h1 {
+  font-size: clamp(2rem, 4.6vw, 3rem);
+  margin-bottom: 10px;
+}
+.contact-head p {
+  color: var(--ink-soft);
+  font-size: 1.05rem;
+}
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: clamp(20px, 4vw, 40px);
+  align-items: start;
+}
+
+.contact-info,
+.contact-form-panel {
+  background: var(--paper);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-lg);
+  padding: clamp(20px, 4vw, 36px);
+}
+.contact-info h2,
+.contact-form-panel h2 {
+  font-size: 1.4rem;
+  margin-bottom: 18px;
+}
+
+.channel-list {
+  display: flex;
+  flex-direction: column;
+}
+.channel {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--line);
+  min-height: 44px;
+}
+.channel-icon {
+  display: inline-flex;
+  flex: 0 0 44px;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius);
+  background: var(--green-tint);
+  color: var(--green);
+  font-size: 1.25rem;
+}
+.channel-text small {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--muted);
+  line-height: 1.4;
+}
+.channel-text strong {
+  display: block;
+  font-size: 1.08rem;
+  font-weight: 600;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+.channel-text em {
+  display: block;
+  margin-top: 2px;
+  font-style: normal;
+  font-size: 0.88rem;
+  color: var(--muted);
+  line-height: 1.5;
+}
+.channel:hover strong {
+  color: var(--green);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.visit {
+  margin-top: 26px;
+}
+.visit h3 {
+  font-size: 1.02rem;
+  margin-bottom: 10px;
+}
+.visit li {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+.visit svg {
+  flex-shrink: 0;
+  margin-top: 5px;
+  color: var(--green);
+}
+.visit a:hover {
+  color: var(--green);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* ---------- Form ---------- */
+.form-hint {
+  margin: -8px 0 20px;
+  font-size: 0.88rem;
+  color: var(--muted);
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.form-field label {
+  font-size: 0.93rem;
+  font-weight: 600;
+}
+.form-field .req {
+  color: #b42318;
+}
+.form-field input,
+.form-field textarea {
+  width: 100%;
+  border: 1.5px solid var(--line-strong);
+  border-radius: var(--radius);
+  background: #fff;
+  color: var(--ink);
+  font: inherit;
+  transition: border-color 0.15s, background-color 0.15s;
+}
+.form-field input {
+  min-height: 48px;
+  padding: 0 14px;
+}
+.form-field textarea {
+  min-height: 160px;
+  padding: 12px 14px;
+  resize: vertical;
+}
+.form-field input:hover,
+.form-field textarea:hover {
+  border-color: var(--green);
+}
+.form-field input:focus-visible,
+.form-field textarea:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 1px;
+  border-color: var(--focus);
+}
+.form-field input:disabled,
+.form-field textarea:disabled {
+  background: var(--mist);
+  cursor: not-allowed;
+}
+
+.form-alert {
+  display: flex;
+  gap: 10px;
+  padding: 14px 16px;
+  border-radius: var(--radius);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+.form-alert svg {
+  flex-shrink: 0;
+  margin-top: 4px;
+  font-size: 1.1rem;
+}
+.form-alert-ok {
+  background: var(--green-tint);
+  border: 1px solid var(--green);
+  color: var(--green-deep);
+}
+.form-alert-error {
+  background: #fdecea;
+  border: 1px solid #b42318;
+  color: #7a1510;
+}
+
+@media (max-width: 900px) {
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 520px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}

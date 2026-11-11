@@ -1,0 +1,15 @@
+export const SITE = {
+  name: 'GEF Thailand',
+  company: 'บริษัท หอมไกล ชลบุรี จำกัด',
+  companyEn: 'GEF Thailand Co., Ltd.',
+  phone: '061-771-1139',
+  phoneHref: 'tel:0617711139',
+  email: 'homglaigroup@gmail.com',
+  line: 'https://page.line.me/hg.group?openQrModal=true',
+  lineId: '@hg.group',
+  facebook: 'https://www.facebook.com/GEFThailand/',
+  map: 'https://maps.app.goo.gl/Dox42EzqwnMx67pZA',
+  address: '1/47 ม.3 ต.เสม็ด อ.เมืองชลบุรี จ.ชลบุรี 20000',
+  hours: 'จันทร์ – อาทิตย์ 08:30 – 18:00 น.',
+  url: process.env.NEXT_PUBLIC_SITE_URL || 'https://gef-thailand.com',
+} as const;
