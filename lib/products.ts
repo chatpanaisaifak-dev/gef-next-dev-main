@@ -113,7 +113,7 @@ export const featureProducts: FeatureProductData[] = [
     title: "Huracan K9 PRO",
     subtitle: "สุดยอดเครื่องปั่นสำหรับมืออาชีพ",
     description: "รองรับการปั่นหนักๆได้ตลอดทั้งวัน ด้วยมอเตอร์ระบบ DC ที่ให้รอบปั่นสูง ปั่นเร็ว ปั่นแรง ปั่นละเอียด เสียงเบา มาพร้อม Soundproof Cover ลดเสียงรบกวน และระบบออโต้ใช้งานได้สะดวกยิ่งขึ้น",
-    image: "/media/image/K9Details.jpg",
+    image: "/media/image/K9_Pro.png",
     imageAlt: "Huracan K9 PRO Blender",
     reverse: false,
     featureList: [
@@ -158,7 +158,7 @@ export const featureProducts: FeatureProductData[] = [
     title: "GEF V3 PRO",
     subtitle: "ปั่นได้ตลอดทั้งวันไม่ต้องพัก",
     description: "เครื่องปั่นเชิงพาณิชย์ที่ออกแบบมาเพื่อเครื่องดื่มยุคใหม่โดยเฉพาะ เพิ่มประสิทธิภาพการทำงานหน้าร้านให้ดียิ่งขึ้นพร้อมความปลอดภัยที่มั่นใจได้",
-    image: "/media/image/V3-Details.png",
+    image: "/media/image/V3PRO.png",
     imageAlt: "GEF V3 PRO Blender",
     reverse: true,
     featureList: [
