@@ -194,7 +194,7 @@
 }
 .hero-model {
   font-weight: 600;
-  color: var(--green);
+  color: #B80F0F;
 }
 .hero-title {
   font-size: clamp(2.1rem, 4.8vw, 3.6rem);

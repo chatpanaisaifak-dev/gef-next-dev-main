@@ -68,6 +68,7 @@
 }
 .product-body h3 {
   font-size: 1.3rem;
+  color: #B80F0F;
 }
 .product-sub {
   color: var(--muted);
